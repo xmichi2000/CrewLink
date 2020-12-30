@@ -139,7 +139,6 @@ export default function App(): JSX.Element {
 		deafenShortcut: 'RControl',
 		muteShortcut: 'RAlt',
 		hideCode: false,
-		adjustLiveOnDead: 1,
 		natFix: false,
 		enableSpatialAudio: true,
 		overlayPosition: 'top',
