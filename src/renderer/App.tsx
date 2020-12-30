@@ -139,6 +139,7 @@ export default function App(): JSX.Element {
 		deafenShortcut: 'RControl',
 		muteShortcut: 'RAlt',
 		hideCode: false,
+		adjustLiveOnDead: 1,
 		natFix: false,
 		enableSpatialAudio: true,
 		overlayPosition: 'top',
@@ -148,6 +149,7 @@ export default function App(): JSX.Element {
 			maxDistance: 5.32,
 			haunting: false,
 		},
+		adjustLiveOnDead: 1,
 	});
 	const lobbySettings = useReducer(
 		lobbySettingsReducer,

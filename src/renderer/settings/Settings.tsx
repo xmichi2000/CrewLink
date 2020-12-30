@@ -223,6 +223,10 @@ const store = new Store<ISettings>({
 			type: 'boolean',
 			default: false,
 		},
+		adjustLiveOnDead: {
+			type: 'number',
+			default: 1,
+		},
 		enableSpatialAudio: {
 			type: 'boolean',
 			default: true,
@@ -843,6 +847,22 @@ const Settings: React.FC<SettingsProps> = function ({
 						});
 					}}
 					control={<Checkbox />}
+				/>
+				<Typography gutterBottom align="center">
+					Dead Player Volume: {''}
+					{Math.round(settings.adjustLiveOnDead * 100)}
+				</Typography>
+				<Slider
+					value={settings.adjustLiveOnDead * 100}
+					min={0}
+					max={100}
+					step={1}
+					onChange={(_, newValue: number | number[]) => {
+						setSettings({
+							type: 'setOne',
+							action: ['adjustLiveOnDead', (newValue as number) / 100],
+						});
+					}}
 				/>
 
 				<URLInput
