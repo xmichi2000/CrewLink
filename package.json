@@ -1,11 +1,11 @@
 {
-  "name": "bettercrewlink",
-  "version": "1.2.14",
+  "name": "BetterCrewLinkVolumeSlider",
+  "version": "1.2.15",
   "license": "GPL-3.0-or-later",
   "description": "Free, open, Among Us proximity voice chat",
   "repository": {
     "type": "git",
-    "url": "https://github.com/OhMyGuus/crewlink.git"
+    "url": "https://github.com/xmichi2000/CrewLink.git"
   },
   "funding": {
     "type": "individual",
