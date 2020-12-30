@@ -23,5 +23,3 @@ artifacts:
   - path: dist/win-unpacked
     name: unpacked
     type: zip
-GITHUB_PAT:
-    secure: 1LVEEVr5p5sJ8WKcnwyyO62wKlahyBuzZD/kw0E2LCDuR7aNK+yxs2cYCjJBmpHL
