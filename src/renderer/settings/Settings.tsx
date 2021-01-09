@@ -497,9 +497,10 @@ const Settings: React.FC<SettingsProps> = function ({ open, onClose }: SettingsP
 		else if (k.startsWith('Arrow')) k = k.substring(5);
 		if (k === ' ') k = 'Space';
 
-		if (k === 'Control' || k === 'Alt' || k === 'Shift') k = (ev.location === 1 ? 'L' : 'R') + k;
+		if (k === 'Control' || k === 'Alt' || k === 'Shift')
+			k = (ev.location === 1 ? 'L' : 'R') + k;
 
-		if (/^[0-9A-Z]$/.test(k) || /^F[0-9]{1, 2}$/.test(k) || keys.has(k)) {
+		if (/^[0-9A-Z]$/.test(k) || /^F[0-9]{1,2}$/.test(k) || keys.has(k)) {
 			setSettings({
 				type: 'setOne',
 				action: [shortcut, k],
